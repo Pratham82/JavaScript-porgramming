@@ -19,9 +19,9 @@ function checkObj(obj, checkProp) {
 
     
    
-obj1 ={gift: "pony", pet: "kitten", bed: "sleigh"}
+// obj1 ={gift: "pony", pet: "kitten", bed: "sleigh"}
 
-console.log(checkObj(obj1,'gift'));
+// console.log(checkObj(obj1,'gift'));
 
 // val1 = obj1.hasOwnProperty('giftdfg')
 // console.log('val1:', val1)
