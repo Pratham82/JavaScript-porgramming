@@ -6,7 +6,7 @@ Truncate a string (first argument) if it is longer than the given maximum string
 */
 
 function truncateString(str, num) {
-	let new_str = str.replace(str.slice(num), "...");
+	let new_str;
 	if (num >= str.length) {
 		return str;
 	} else {
@@ -22,9 +22,3 @@ console.log(
 		"A-tisket a-tasket A green and yellow basket".length + 2
 	)
 );
-// let string = "testing";
-// string = "A-tisket a-tasket A green and yellow basket";
-
-// let new_str = string.replace(string.slice(8), "...");
-
-// console.log(new_str);
