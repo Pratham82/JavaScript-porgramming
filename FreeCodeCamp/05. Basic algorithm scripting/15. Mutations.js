@@ -17,13 +17,6 @@ function mutation(arr) {
 		if (arr1.indexOf(arr2[i]) < 0) return false;
 	}
 	return true;
-
-	var test = arr[1].toLowerCase();
-	var target = arr[0].toLowerCase();
-	for (var i = 0; i < test.length; i++) {
-		if (target.indexOf(test[i]) < 0) return false;
-	}
-	return true;
 }
 
 // if (arr[0].toUpperCase() == arr[1].toUpperCase()) {
