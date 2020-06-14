@@ -3,8 +3,8 @@
 var items = document.getElementsByClassName("collection-item");
 console.log(items);
 console.log(items[0]);
-items[0].style.background = "lightblue";
-items[4].style.background = "orange";
+//items[0].style.background = "lightblue";
+//items[4].style.background = "orange";
 
 const list_items = document
 	.querySelector("ul")
@@ -43,12 +43,12 @@ listNew.forEach((li, i) => {
 listOdd = document.querySelectorAll("li:nth-child(odd)");
 listEven = document.querySelectorAll("li:nth-child(even)");
 
-listOdd.forEach((li) => {
-	li.style.background = "#ccc";
-	li.style.color = "blue";
-});
+// listOdd.forEach((li) => {
+// 	li.style.background = "#ccc";
+// 	li.style.color = "blue";
+// });
 
-listEven.forEach((li) => {
-	li.style.background = "#ffc";
-	li.style.color = "grey";
-});
+// listEven.forEach((li) => {
+// 	li.style.background = "#ffc";
+// 	li.style.color = "grey";
+// });
