@@ -1,0 +1,131 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(rgb(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+		url("2308306.jpg");
+}
+
+#container {
+	font-family: "Poppins", sans-serif;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 600px;
+	margin: 50px auto;
+}
+
+#app {
+	border-radius: 26px 26px 26px 26px;
+	width: 350px;
+	height: 550px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 3px 3px 16px -1px rgba(0, 0, 0, 0.75);
+}
+
+#result {
+	padding: 10px;
+	border-radius: 26px 26px 26px 26px;
+	height: 120px;
+	background-color: #fff;
+}
+
+#history {
+	text-align: right;
+	height: 30px;
+	padding: 20px;
+	background-color: #fff;
+	color: #939696;
+}
+
+#output {
+	text-align: right;
+	height: 50px;
+	padding: 20px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	font-size: 25px;
+}
+
+#keyboard {
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 10px;
+	padding: 15px;
+	height: 400px;
+}
+
+.operator,
+.number,
+.empty {
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	transition: 0.1s;
+}
+
+.empty {
+	background-color: rgba(255, 255, 255, 0);
+}
+.number {
+	font-size: 18px;
+	background-color: rgb(235, 232, 232);
+}
+.operator {
+	font-size: 20px;
+}
+button:nth-child(1),
+button:nth-child(2),
+button:nth-child(3) {
+	font-size: 18px;
+	background-color: #d9dbdb;
+}
+
+button:nth-child(4) {
+	font-size: 30px;
+	background-color: #20b2aa;
+}
+
+button:nth-child(8) {
+	font-size: 30px;
+	background-color: #ffa500;
+}
+button:nth-child(12) {
+	font-size: 35px;
+	background-color: #f08080;
+}
+button:nth-child(16) {
+	font-size: 30px;
+	background-color: #7d93e0;
+}
+button:nth-child(20) {
+	font-size: 30px;
+	background-color: #9477af;
+}
+
+.operator:active {
+	transition: 0.1s;
+	font-size: 28px;
+}
+
+button:nth-child(1):active,
+button:nth-child(2):active,
+button:nth-child(3):active {
+	font-size: 15px;
+	background-color: #afafaf;
+}
+
+.number:active {
+	font-size: 15px;
+	background-color: #bdbbbb;
+}
