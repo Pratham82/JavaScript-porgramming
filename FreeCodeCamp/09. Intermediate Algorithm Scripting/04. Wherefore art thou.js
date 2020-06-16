@@ -52,15 +52,18 @@ console.log(
 	)
 ); // OP: [ { apple: 1, bat: 2 }, { apple: 1, bat: 2, cookie: 2 } ]
 
-// var arr = [
-// 	{ first: "Romeo", last: "Montague" },
-// 	{ first: "Mercutio", last: null },
-// 	{ first: "Tybalt", last: "Capulet" },
-// ];
-// var obj = { last: "Capulet" };
-// var val = Object.values(obj);
-// var key = Object.keys(obj);
-// console.log(key);
+var arr = [
+	{ first: "Romeo", last: "Montague" },
+	{ first: "Mercutio", last: null },
+	{ first: "Tybalt", last: "Capulet" },
+];
+var obj = { last: "Capulet" };
+var keys = Object.keys(obj);
+arr.filter((i) => {
+	for (var key in keys) {
+		console.log(i);
+	}
+});
 
 // console.log(arr[2][key] == val);
 
