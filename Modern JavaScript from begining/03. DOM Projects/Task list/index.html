@@ -13,6 +13,13 @@
 			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
 			crossorigin="anonymous"
 		/>
+		<style>
+			.card-title {
+				text-align: center;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 45px;
+			}
+		</style>
 		<title>Task list</title>
 	</head>
 	<body>
@@ -21,22 +28,14 @@
 				<div class="col s12">
 					<div id="main" class="card">
 						<div class="card-content">
-							<span class="card-title">Task List</span>
+							<span class="card-title">Tasks List</span>
 							<div class="row">
 								<form id="task-form">
 									<div class="input-field col s12">
-										<input
-											type="text"
-											name="task"
-											id="task"
-										/>
+										<input type="text" name="task" id="task" />
 										<label for="task">New task</label>
 									</div>
-									<input
-										type="submit"
-										value="Add task"
-										class="btn"
-									/>
+									<input type="submit" value="Add task" class="btn" />
 								</form>
 							</div>
 						</div>
@@ -47,9 +46,7 @@
 								<label for="filter">Filter tasks</label>
 							</div>
 							<ul class="collection"></ul>
-							<a href="#" class="clear-tasks btn black"
-								>Clear Tasks</a
-							>
+							<a href="#" class="clear-tasks btn black">Clear Tasks</a>
 						</div>
 					</div>
 				</div>
