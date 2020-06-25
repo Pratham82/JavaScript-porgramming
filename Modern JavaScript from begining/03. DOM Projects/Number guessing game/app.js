@@ -42,7 +42,6 @@ guessBtn.addEventListener("click", () => {
 	} else {
 		//Reduce the number of guesses if guess was wrong
 		guessesLeft -= 1;
-		console.log(winingNum);
 		if (guessesLeft === 0) {
 			gameOver(false, `😢 You lost the game correct guess was ${winingNum}.`);
 		} else if (guess < winingNum) {
