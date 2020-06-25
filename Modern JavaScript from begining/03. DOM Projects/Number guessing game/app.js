@@ -34,7 +34,6 @@ guessBtn.addEventListener("click", () => {
 		// If the user not added the correct number guesses will not be reduced
 		guessInput.select();
 		guessesLeft = 3;
-		console.log(guessesLeft);
 	}
 
 	// Check if guess is correct
