@@ -38,12 +38,18 @@ guessBtn.addEventListener("click", () => {
 
 	// Check if guess is correct
 	if (guess === winingNum) {
-		gameOver(true, `😄 Hurray ${winingNum} is correct you've won the game!!!`);
+		gameOver(
+			true,
+			`😄 Hurray ${winingNum} is correct you've won the game!!!`
+		);
 	} else {
 		//Reduce the number of guesses if guess was wrong
 		guessesLeft -= 1;
 		if (guessesLeft === 0) {
-			gameOver(false, `😢 You lost the game correct guess was ${winingNum}.`);
+			gameOver(
+				false,
+				`😢 You lost the game correct guess was ${winingNum}.`
+			);
 		} else if (guess < winingNum) {
 			setMessage(
 				`Try going higher, you still have ${guessesLeft} guesses  left.`,
