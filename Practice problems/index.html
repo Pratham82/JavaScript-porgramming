@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<style>
+			body {
+				background-color: grey;
+			}
+		</style>
+		<h2>Testing</h2>
+		<script>
+			function Person(firstName, lastName) {
+				this.firstName = firstName;
+				this.lastName = lastName;
+			}
+			let p1 = new Person("Harry", "Potter");
+
+			//Proto function
+			Person.prototype.getFullName = function () {
+				return `${this.firstName} ${this.lastName}`;
+			};
+
+			Person.prototype.greeting = function () {
+				return `Hi 👋 there ${firstName}`;
+			};
+			console.log(p1);
+			console.log(p1.getFullName());
+
+			//New constructor
+			function Student(
+				firstName,
+				lastName,
+				studID = 001,
+				studDegree = "UG"
+			) {
+				Person.call(this, firstName, lastName);
+				this.studID = studID;
+				this.studDegree = studDegree;
+			}
+
+			stud1 = new Student("John", "snow🏂", 100, "BE");
+			console.log(stud1);
+			//console.log(stud1.getFullName()); // returns error
+
+			// After inheritance method from Person prototype
+			Student.prototype = Object.create(Person.prototype);
+		</script>
+	</body>
+</html>
