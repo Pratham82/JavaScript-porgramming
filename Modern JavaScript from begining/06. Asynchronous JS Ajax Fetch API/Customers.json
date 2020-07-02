@@ -1,0 +1,20 @@
+[
+	{
+		"id": 1,
+		"name": "John Snow",
+		"company": "MakeMyTrip",
+		"phone": 111415454
+	},
+	{
+		"id": 2,
+		"name": "Rob Stark",
+		"company": "Google",
+		"phone": 45454511
+	},
+	{
+		"id": 3,
+		"name": "Benny Floyd",
+		"company": "Amazon",
+		"phone": 45646548
+	}
+]
