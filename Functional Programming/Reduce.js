@@ -55,3 +55,47 @@ accumulator: 15, item: 15
 /* We give the reduce method our reducer  function and our initial value*/
 const total = numbers.reduce(reducer, initialValue);
 console.log(total); // 30
+
+// Flattening the array using reduce
+
+const numArray = [1, 2, [3, 10, [11, 12]], [1, 2, [3, 4]], 5, 6];
+
+function flattenArray(data) {
+	//our initial value which is an blank array
+	const initialValue = [];
+
+	// Call reduce on our data
+	return data.reduce((total, value) => {
+		// If the value is in an array then recursively call reduce
+		// If value is not in an array then just concatenate the value
+		return total.concat(Array.isArray(value) ? flattenArray(value) : value);
+	}, initialValue);
+}
+
+console.log(flattenArray(numArray));
+
+//
+
+//* Changing the object structure
+
+const pokemon = [
+	{ name: "charmander", type: "fire 🔥" },
+	{ name: "squirtle", type: "water 💧" },
+	{ name: "bulbasaur", type: "grass 🍀" },
+];
+
+// convert pokemon -> pokemonModified
+
+const pokemonModified = {
+	charmander: { type: "fire" },
+	squirtle: { type: "water" },
+	bulbasaur: { type: "grass" },
+};
+
+const getMapFromArray = (data) =>
+	data.reduce((acc, item) => {
+		acc[item.name] = { type: item.type };
+		return acc;
+	}, {});
+
+console.log(getMapFromArray(pokemon));
