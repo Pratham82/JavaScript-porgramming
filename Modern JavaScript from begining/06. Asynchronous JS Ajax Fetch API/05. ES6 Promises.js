@@ -28,7 +28,7 @@ function createPost(post) {
 	return new Promise(function (resolve, reject) {
 		setTimeout(function () {
 			posts.push(post);
-			const error = true;
+			const error = false;
 			if (!error) {
 				resolve();
 			} else {
@@ -51,7 +51,7 @@ function getPost() {
 
 //createPost({ title: "post4", body: "test" }, getPost);
 
-// We will use .then to resolve a promise and in (.then) we will call getPost function
+// We will use .then to resolve a promise and in (.then) we will call getPost function`
 
 createPost({ title: "post4", body: "testing article" })
 	.then(getPost)
