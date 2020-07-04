@@ -1,0 +1,2 @@
+This is text data about fetch:
+JavaScript can send network requests to the server and load new information whenever it’s needed.
