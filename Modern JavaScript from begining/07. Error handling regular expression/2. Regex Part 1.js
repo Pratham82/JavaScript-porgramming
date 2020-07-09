@@ -11,7 +11,7 @@ RegEx methods
 
 
 String methods
-* string.match(regEx) : returns an array with all matches
+* string.match(regEx) : returns an aErray with all matches
 * string.search(regEx) : returns starting index of first match
 * string.replace(regEx): returns a new string with all or some matches of patterns replaced
 
