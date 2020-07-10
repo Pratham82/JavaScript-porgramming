@@ -25,7 +25,6 @@ zipCode.addEventListener("keyup", validateZipCode);
 
 function validateFName() {
 	const nameValue = fname.value;
-	const lastNameValue = lname.value;
 	let re = /^[a-z]{2,10}$/i;
 	if (!re.test(nameValue)) {
 		fname.className = "is-invalid form-control";
