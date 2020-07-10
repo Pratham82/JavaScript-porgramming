@@ -86,11 +86,3 @@ document.querySelectorAll(".test").forEach((item) => {
 		item.placeholder = "Enter your name";
 	});
 });
-
-// // Remove placeholder after we go into input
-// name.addEventListener("focus", () => {
-// 	name.placeholder = "";
-// });
-// name.addEventListener("focusout", () => {
-// 	name.placeholder = "Enter your name";
-// });
