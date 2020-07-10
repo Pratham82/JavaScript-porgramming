@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
+
+		<title>Hello, world!</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 mx-auto">
+					<h1 class="mt-5 text-center text-capitalize">User form</h1>
+					<form action="">
+						<!-- FirstName -->
+						<div class="form-group">
+							<label for="">First Name</label>
+							<input
+								type="text"
+								class="form-control test"
+								id="fname"
+								placeholder="Enter your first name"
+							/>
+							<div class="invalid-feedback">
+								<h6>
+									Enter alphabets allowed between 2-10
+									characters
+								</h6>
+							</div>
+							<div class="valid-feedback pt-1">
+								<h6>This looks Great 😄</h6>
+							</div>
+						</div>
+
+						<!-- lastName -->
+						<div class="form-group">
+							<label for="">Last Name</label>
+							<input
+								type="text"
+								class="form-control test"
+								id="lname"
+								placeholder="Enter your last name"
+							/>
+							<div class="invalid-feedback">
+								<h6>
+									Last name must be in alphabets between 2 and
+									10 characters
+								</h6>
+							</div>
+							<div class="valid-feedback">
+								<h6>This looks Great 😄</h6>
+							</div>
+						</div>
+
+						<!-- Email -->
+						<div class="form-group">
+							<label for="">Email</label>
+							<input
+								type="text"
+								class="form-control test"
+								id="email"
+								placeholder="Enter your email ID"
+							/>
+							<div class="valid-feedback">
+								<h6>Looks good 😄</h6>
+							</div>
+							<div class="invalid-feedback">
+								<h6>Enter a valid email ID 🤷‍♂</h6>
+							</div>
+						</div>
+
+						<!-- Phone -->
+						<div class="form-group">
+							<label for="">Phone</label>
+							<input
+								type="text"
+								class="form-control test"
+								id="phone"
+								placeholder="Enter your phone number"
+							/>
+							<div class="invalid-feedback">
+								<h6>
+									Enter a valid phone number🤷‍♂ which must be
+									10 digits long
+								</h6>
+							</div>
+						</div>
+
+						<!-- zip code -->
+						<div class="form-group">
+							<label for="">Zip code</label>
+							<input
+								type="text"
+								class="form-control test"
+								id="zipcode"
+								placeholder="Enter zip code"
+							/>
+							<div class="invalid-feedback">
+								<h6>Zipcode must be a 6 digit number</h6>
+							</div>
+							<div class="valid-feedback">
+								<h6>
+									Done 😄 now you can submit the form if all
+									field are filled
+								</h6>
+							</div>
+						</div>
+						<input
+							type="submit"
+							value="Submit form"
+							class="btn btn-primary btn-block"
+						/>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+			crossorigin="anonymous"
+		></script>
+		<script src="app.js"></script>
+	</body>
+</html>
