@@ -1,3 +1,12 @@
+// Metacharacter Symbols
+/^h/i; // Must start with
+/ world$/i; // Must ends with
+/^hello$/i; // Must begin and end with
+/h.llo/i; // Matches any ONE character
+/h*llo/i; // Matches any character 0 or more times
+/gre?a?y/i; // Optional character
+/gre?a?y\?/i; // Escape character
+
 let re;
 
 //RegEX literals
