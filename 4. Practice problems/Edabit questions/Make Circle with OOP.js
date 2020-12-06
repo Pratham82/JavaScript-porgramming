@@ -40,3 +40,5 @@ class Circle {
 let q = new Circle(4.44);
 console.log(q.getArea());
 console.log(q.getPerimeter());
+
+//* Stated 
