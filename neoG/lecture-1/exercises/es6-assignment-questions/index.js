@@ -122,7 +122,7 @@ console.log(operation, members)
 
 const packIt = (...args) => args
 function packItEs5() {
-  return Object.values(arguments)
+  return Object.keys(arguments).map(val => arguments[val])
 }
 
 console.log(packIt(1, 2, 3, 5, 5))
@@ -138,7 +138,9 @@ const obj = {
   alooNew: 1,
   bhallo: 2,
 }
+// const { c = [2, 3, 4].push(5) } = obj // returns 4 because after pushing into array the updated length of an array will be 4
 
 const { c: alooNew = [2, 3, 4].push(5) } = obj
 
 console.log(alooNew) // 4
+console.log(c) // c is not defined
