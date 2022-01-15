@@ -1,0 +1,49 @@
+body {
+  font-family: sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+button {
+  background-color: yellow;
+  color: #fff;
+}
+
+#main-btn.btn {
+  background-color: blue;
+}
+
+main nav #main-btn {
+  background-color: red;
+}
+
+.toast-btn {
+  background-color: rgb(27, 137, 255);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toast-btn:hover {
+  background-color: rgb(13, 107, 208);
+  transition: 0.15s ease-in;
+  transform: scale(0.95);
+}
+
+.toast {
+  display: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.494);
+  text-align: center;
+  height: 60px;
+  border-radius: 8px;
+  width: 800px;
+  margin-left: 200px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 4;
+}
+
+.toastContainer {
+  position: relative;
+}
