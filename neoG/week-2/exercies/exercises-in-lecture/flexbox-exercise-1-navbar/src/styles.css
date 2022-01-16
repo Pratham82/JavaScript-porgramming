@@ -1,0 +1,37 @@
+body {
+  font-family: sans-serif;
+}
+.container {
+  /* background-color: grey; */
+  border: 1px solid red;
+  display: flex;
+  font-size: 30px;
+}
+.container * {
+  flex-grow: 1;
+  text-align: center;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blueviolet;
+  color: white;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  padding: 4px;
+}
+
+.user {
+  background-color: pink;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}

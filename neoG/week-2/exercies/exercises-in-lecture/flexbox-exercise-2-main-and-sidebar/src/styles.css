@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+  background-color: rgb(230, 230, 230);
+}
+
+.container {
+  display: flex;
+}
+
+.child {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.child:nth-child(1) {
+  /* width: 250px; */
+  flex-basis: 250px;
+}
+
+.child:nth-child(2) {
+  flex-grow: 1;
+}
