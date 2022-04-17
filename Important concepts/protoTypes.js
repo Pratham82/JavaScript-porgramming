@@ -34,7 +34,7 @@ const max = arr => {
   return max
 }
 
-const max2 = ar
+// const max2 = ar
 
 // min
 const min = arr => {
@@ -79,3 +79,44 @@ Array.prototype.calculate = function (operation) {
 console.log(array.calculate(sum))
 console.log(sum2(array))
 console.log(avg2(array))
+
+// ForEach
+Array.prototype.customForEach = function (cb) {
+  for (let i = 0; i < this.length; i++) {
+    cb(this[i], i, this)
+  }
+}
+
+console.log('--')
+array.customForEach(a => console.log(a))
+
+// Map
+Array.prototype.customMap = function (cb) {
+  let res = []
+  for (let i = 0; i < this.length; i++) {
+    res.push(cb(this[i], i, this))
+  }
+  return res
+}
+
+console.log('--')
+array.customMap(a => console.log(a))
+
+// Filter
+Array.prototype.customFilter = function (cb, context) {
+  let res = []
+  for (let i = 0; i < this.length; i++) {
+    if (cb.call(context, this[i], i, this)) {
+      res.push(this[i])
+    }
+  }
+  return res
+}
+
+console.log('--')
+console.log(array.customFilter(a => a > 11))
+
+// Reduce
+Array.prototype.customReducer = function (cb, initialValue) {
+  return this
+}
