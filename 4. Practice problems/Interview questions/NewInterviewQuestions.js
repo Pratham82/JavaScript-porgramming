@@ -229,7 +229,6 @@ const pushZeroes = arr => {
   return arr
 }
 console.log(pushZeroes(arrays))
-/*
 const pushZeroes2 = arr => {
   let res = []
   for (let i = 0; i < arr.length; i++) {
@@ -242,7 +241,6 @@ const pushZeroes2 = arr => {
   }
   return res
 }
-*/
 console.log(pushZeroes2(arrays))
 // const pushZeroes = arr => {
 //   let res = []
