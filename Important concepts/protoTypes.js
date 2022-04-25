@@ -120,3 +120,14 @@ console.log(array.customFilter(a => a > 11))
 Array.prototype.customReducer = function (cb, initialValue) {
   return this
 }
+
+// Substring polyfill
+String.prototype.subStringNew = function () {
+  let subStrArr = []
+  for (let i = 0; i <= this.length; i++) {
+    for (let j = i + 1; j <= this.length; j++) {
+      subStrArr.push(this.slice(i, j))
+    }
+  }
+  return subStrArr
+}
