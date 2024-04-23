@@ -2,6 +2,7 @@
  *  * Important links
  *  * Difference between debounce and throttle:https://stackoverflow.com/questions/25991367/difference-between-throttling-and-debouncing-a-function
  *  * visualization: https://web.archive.org/web/20220117092326/http://demo.nimius.net/debounce_throttle/
+ *  * visualization: https://kettanaito.com/blog/debounce-vs-throttle
  *
  */
 // ** Implementation without using array
