@@ -1,23 +1,23 @@
-"use strict";
+'use strict'
 
-process.stdin.resume();
-process.stdin.setEncoding("utf-8");
+process.stdin.resume()
+process.stdin.setEncoding('utf-8')
 
-let inputString = "";
-let currentLine = 0;
+let inputString = ''
+let currentLine = 0
 
-process.stdin.on("data", function (inputStdin) {
-	inputString += inputStdin;
-});
+process.stdin.on('data', function (inputStdin) {
+  inputString += inputStdin
+})
 
-process.stdin.on("end", function () {
-	inputString = inputString.split("\n");
+process.stdin.on('end', function () {
+  inputString = inputString.split('\n')
 
-	main();
-});
+  main()
+})
 
 function readLine() {
-	return inputString[currentLine++];
+  return inputString[currentLine++]
 }
 
 /*
@@ -27,24 +27,47 @@ function readLine() {
  */
 
 function fizzBuzz(n) {
-	for (var i = 1; i <= n; i++) {
-		if (i % 3 == 0 && i % 5 == 0) {
-			console.log("FizzBuzz");
-			continue;
-		} else if (i % 3 == 0) {
-			console.log("Fizz");
-			continue;
-		} else if (i % 5 == 0) {
-			console.log("Buzz");
-			continue;
-		} else {
-			console.log(i);
-		}
-	}
+  for (var i = 1; i <= n; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+      console.log('FizzBuzz')
+      continue
+    } else if (i % 3 == 0) {
+      console.log('Fizz')
+      continue
+    } else if (i % 5 == 0) {
+      console.log('Buzz')
+      continue
+    } else {
+      console.log(i)
+    }
+  }
+}
+
+// * Updated 22-04-2024
+function fizzBuzz(n) {
+  // Write your code here
+  const getFizzBuzz = n => {
+    switch (true) {
+      case n % 3 === 0 && n % 5 !== 0: {
+        return 'Fizz'
+      }
+      case n % 5 === 0 && n % 3 !== 0: {
+        return 'Buzz'
+      }
+      case n % 3 === 0 && n % 5 === 0: {
+        return 'FizzBuzz'
+      }
+      default:
+        return n
+    }
+  }
+  for (let i = 1; i <= n; i++) {
+    console.log(getFizzBuzz(i))
+  }
 }
 
 function main() {
-	const n = parseInt(readLine().trim(), 10);
+  const n = parseInt(readLine().trim(), 10)
 
-	fizzBuzz(n);
+  fizzBuzz(n)
 }
