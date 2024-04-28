@@ -171,9 +171,19 @@ const myPromiseAllSettled = promises => {
   return Promise.all(mappedPromises)
 }
 
+const myPromiseRace = promises => {
+  return new Promise((resolve, reject) => {
+    promises.forEach(promise => {
+      Promise.resolve(promise)
+        .then(resolve, reject) // * resolve, when any of the input promise resolve
+        .catch(reject) // * reject, when any of the input promise rejects
+    })
+  })
+}
+
 ;(async () => {
   try {
-    const res = await myPromiseAllFunction(rejectedPromises)
+    const res = await myPromiseRace(rejectedPromises)
     console.log('🚀 ~ ; ~ res:', res)
   } catch (error) {
     console.log(error)
