@@ -1,11 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Loader from './Loader'
 import axios from 'axios'
 
-Loader
 const URL = 'https://jsonplaceholder.typicode.com/posts'
 
-export default function App() {
+export default function InfiniteScroll() {
   const [data, setData] = useState([])
   const [currentPage, setCurrentPage] = useState(1)
   const observerTarget = useRef(null)
