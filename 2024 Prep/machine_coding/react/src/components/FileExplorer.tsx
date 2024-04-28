@@ -38,6 +38,7 @@ export default function FileExplorer({ data }: { data: IFileExplorerData }) {
           style={{
             marginLeft: 7,
             border: '1px solid white',
+            cursor: 'pointer',
           }}
           onClick={toggleCollapse}
         >
