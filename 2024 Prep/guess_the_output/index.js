@@ -79,3 +79,40 @@ for (let i = 0; i < 4; i++) {
 }
 
 // 0 1 2 3
+
+const arr = [1, 2, 3, 4, 5]
+const arr2 = ['prathamesh', 'test', '889', 4, 5, { a: '000' }]
+const obj = { ...arr2 }
+
+const promise = new Promise(res => res(2))
+
+/*
+promise
+  .then(v => {
+    console.log(v)
+    return v * 2
+  })
+  .then(v => {
+    console.log(v)
+    return v * 2
+  })
+  .finally(v => {
+    console.log({ msg: 'finally', v }) //  * finally value will be always undefined, even if promise is fulfilled or rejected
+    return 0
+  })
+  .then(v => {
+    console.log(v)
+  })
+*/
+
+// for (let i in arr3) {
+//   console.log(i)
+// }
+
+// for (let i of arr3) {
+//   console.log(i)
+// }
+// const arr3 = [3, 4, 5, 6]
+
+// arr3.foo = 'Hi'
+// console.log(arr3)
