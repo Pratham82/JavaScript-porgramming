@@ -41,4 +41,17 @@ const findNestedValueFromObj = (obj, retrievalString) => {
   return finalObj
 }
 
+function getValue(obj, nestedKey) {
+  const keys = nestedKey.split('.')
+  let value = obj
+  for (const key of keys) {
+    value = value[key]
+    if (value === undefined) return undefined
+  }
+  return value
+}
+
 const res2 = findNestedValueFromObj(nestedObject2, 'a.b.c.d')
+const res3 = getValue(nestedObject2, 'a.b.c.d.E')
+console.log('🚀 ~ res3:', res3)
+console.log('🚀 ~ res2:', res2)
