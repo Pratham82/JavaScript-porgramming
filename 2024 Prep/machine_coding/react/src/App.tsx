@@ -1,11 +1,11 @@
 import './App.css'
-import { LiftingUpState } from './components'
+import { InputHookComp } from './components'
 
 function App() {
   return (
     <div className="container">
       <h1>Vite + React</h1>
-      <LiftingUpState />
+      <InputHookComp />
     </div>
   )
 }

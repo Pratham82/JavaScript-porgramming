@@ -4,6 +4,7 @@ import FileExplorer from './FileExplorer'
 import BatchingStates from './BatchingStates'
 import CountDownTimer from './Timer'
 import LiftingUpState from './LiftingStateUp'
+import InputHookComp from './InputCustomHookComp'
 
 export {
   Loader,
@@ -12,4 +13,5 @@ export {
   BatchingStates,
   CountDownTimer,
   LiftingUpState,
+  InputHookComp,
 }
