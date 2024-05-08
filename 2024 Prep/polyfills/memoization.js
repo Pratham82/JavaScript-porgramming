@@ -46,6 +46,3 @@ const memoizedOperation = memoizeV2(expensiveOperation)
 
 console.log(memoizedOperation(5)) // Output: Calculating... \n Cache miss! \n 10
 console.log(memoizedOperation(5)) // Output: Cache hit! \n 10
-console.log(memoizedOperation(5)) // Output: Cache hit! \n 10
-console.log(memoizedOperation(5)) // Output: Cache hit! \n 10
-console.log(memoizedOperation(5)) // Output: Cache hit! \n 10
