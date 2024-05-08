@@ -1,12 +1,11 @@
 import './App.css'
-import { BatchingStates } from './components'
+import { CountDownTimer } from './components'
 
 function App() {
   return (
     <div className="container">
       <h1>Vite + React</h1>
-      <div>{/* <FileExplorer data={fileExplorerData} /> */}</div>
-      <BatchingStates />
+      <CountDownTimer seconds={20} />
     </div>
   )
 }
