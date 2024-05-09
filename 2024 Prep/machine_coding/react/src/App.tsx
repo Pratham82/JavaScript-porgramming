@@ -1,11 +1,11 @@
 import './App.css'
-import { InputHookComp } from './components'
+import { CounterWithReducer } from './components'
 
 function App() {
   return (
     <div className="container">
       <h1>Vite + React</h1>
-      <InputHookComp />
+      <CounterWithReducer />
     </div>
   )
 }

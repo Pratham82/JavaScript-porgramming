@@ -5,6 +5,7 @@ import BatchingStates from './BatchingStates'
 import CountDownTimer from './Timer'
 import LiftingUpState from './LiftingStateUp'
 import InputHookComp from './InputCustomHookComp'
+import CounterWithReducer from './CounterWithReducer'
 
 export {
   Loader,
@@ -14,4 +15,5 @@ export {
   CountDownTimer,
   LiftingUpState,
   InputHookComp,
+  CounterWithReducer,
 }
