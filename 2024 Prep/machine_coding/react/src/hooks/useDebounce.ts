@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
-const useDebounce = <T>(callBack: T, delay = 500) => {
-  const [debouncedText, setDebouncedText] = useState<string>('')
+const useDebounce = (value: string, delay = 500) => {
+  const [debouncedText, setDebouncedText] = useState<string>(value)
 
   useEffect(() => {
     // * add delay for setting the valye
@@ -12,5 +12,7 @@ const useDebounce = <T>(callBack: T, delay = 500) => {
     // * run clearTimeout in a cleanup function
     return () => clearTimeout(timeOut)
   }, [debouncedText, delay])
+
+  return debouncedText
 }
 export { useDebounce }
