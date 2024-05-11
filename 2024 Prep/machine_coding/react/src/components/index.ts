@@ -6,6 +6,7 @@ import CountDownTimer from './Timer'
 import LiftingUpState from './LiftingStateUp'
 import InputHookComp from './InputCustomHookComp'
 import CounterWithReducer from './CounterWithReducer'
+import ReRender from './ReRender'
 
 export {
   Loader,
@@ -16,4 +17,5 @@ export {
   LiftingUpState,
   InputHookComp,
   CounterWithReducer,
+  ReRender,
 }

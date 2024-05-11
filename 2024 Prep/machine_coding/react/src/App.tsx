@@ -1,11 +1,11 @@
 import './App.css'
-import { CounterWithReducer } from './components'
+import { ReRender } from './components'
 
 function App() {
   return (
     <div className="container">
       <h1>Vite + React</h1>
-      <CounterWithReducer />
+      <ReRender />
     </div>
   )
 }
