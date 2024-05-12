@@ -18,3 +18,10 @@ const onFormSubmit = event => {
 }
 
 myForm.addEventListener('submit', onFormSubmit)
+
+function showDetails(animalType) {
+  const animalTypeVal = animalType.getAttribute('data-animal-type')
+  const animal = animalType.innerHTML
+  console.log('🚀 ~ showDetails ~ animalType:', animalTypeVal, animal)
+  alert(`${animal} is a ${animalTypeVal}`)
+}
